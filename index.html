@@ -64,32 +64,4 @@
     <div style="text-align:center;color:#94a3b8;font-size:11px;margin-top:8px">Generado autónomo sin React • Foto incrustada como Base64</div>
   </div>
 </body>
-</html>tml
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Indicador de Preocupación</title>
-<style>
-      <h1 style="margin-top:10px;">Genni Agustín Aguilar Hernández</h1>
-  <p> Medico - Formación Autodidacta</p>
-</div>
-<h1>Indicador de Preocupación</h1>
-<div class="item"><input type="checkbox" id="c1" onchange="calcular()"> 1. Expresión Verbal - El usuario expresa miedo</div>
-<div class="item"><input type="checkbox" id="c2" onchange="calcular()"> 2. Comportamiento - Signos de inquietud</div>
-<hr>
-<div id="resultado"></div>
-<script>
-function calcular(){
-let total=0;
-if(document.getElementById('c1').checked) total++;
-if(document.getElementById('c2').checked) total++;
-let r=document.getElementById('resultado');
-if(total==0) r.innerHTML='<div class=bajo>🟢 NIVEL BAJO<br>Conducta: Continuar con la atención habitual.</div>';
-if(total==1) r.innerHTML='<div class=medio>🟡 NIVEL MODERADO<br>Conducta: Validar emoción y dar más información.</div>';
-if(total==2) r.innerHTML='<div class=alto>🔴 NIVEL ALTO<br>Conducta: Detener, ofrecer agua y avisar a supervisor.</div>';
-}
-calcular();
-</script>
-</body>
 </html>
