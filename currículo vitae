@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CV Europass Genni Aguilar</title>
+<script>
+function loadFoto(e){
+ const f=e.target.files[0]; if(!f) return;
+ const r=new FileReader();
+ r.onload=ev=>{ document.querySelectorAll('.foto-circle img').forEach(im=>im.src=ev.target.result); document.querySelectorAll('.foto-circle').forEach(d=>{d.innerHTML='<img src="'+ev.target.result+'" style="width:100%;height:100%;object-fit:cover;object-position:center top">';}); };
+ r.readAsDataURL(f);
+}
+</script>
+<style>
+body{font-family:'Segoe UI',Inter,Arial;background:#eef2ff;margin:0;padding:20px;color:#1e293b}
+.wrap{max-width:950px;margin:0 auto;background:white;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.1);display:flex;flex-wrap:wrap}
+.left{width:32%;background:#1e3a8a;color:white;padding:25px;min-width:280px;box-sizing:border-box}
+.right{width:68%;padding:30px;min-width:300px;box-sizing:border-box}
+.foto-circle{width:130px;height:130px;border-radius:50%;background:#fff;color:#1e3a8a;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:bold;margin:0 auto 15px;overflow:hidden;border:3px solid #93c5fd}
+.badge{background:rgba(255,255,255,.15);padding:8px 12px;border-radius:8px;margin:6px 0;font-size:13px}
+h2{color:#1e3a8a;border-bottom:3px solid #1e3a8a;padding-bottom:6px;margin-top:30px}
+h3{margin:18px 0 4px;color:#1e293b}
+.job{border-left:3px solid #3b82f6;padding-left:12px;margin:12px 0}
+.small{font-size:12px;color:#64748b}
+.btn{background:#1e3a8a;color:white;border:none;padding:10px 18px;border-radius:20px;cursor:pointer;margin:5px}
+@media(max-width:800px){.left,.right{width:100%}}
+</style>
+</head>
+<body>
+<div style="max-width:950px;margin:0 auto 15px;text-align:center">
+<a href="https://genniaguilar-bit.github.io/app-ana/" class="btn" style="text-decoration:none;display:inline-block">⬅️ Ver Indicador</a>
+<button class="btn" onclick="document.getElementById('f').click()">📷 Poner mi foto</button>
+<input type="file" id="f" accept="image/*" style="display:none" onchange="loadFoto(event)">
+</div>
+<div class="wrap">
+<div class="left">
+<div class="foto-circle">GA</div>
+<h2 style="color:white;border-color:#93c5fd;text-align:center">Genni A. AGUILAR H.</h2>
+<p style="text-align:center;font-size:14px;margin-top:-10px">Médico - Medicina Crítica</p>
+<div class="badge">📧 genni.aguilar@gmail.com</div>
+<div class="badge">📍 Madrid, España</div>
+<div class="badge">🇪🇸 Nacionalidad Española</div>
+<div class="badge">🪪 ICOMEM 28...026</div>
+<div class="badge">🔗 github.com/genniaguilar-bit/app-ana</div>
+<div class="badge">✅ COD-IMG-20260804-9F4B2A</div>
+<h3 style="color:#93c5fd;margin-top:25px">IDIOMAS</h3>
+<div class="badge">Español: Nativo C2</div>
+<div class="badge">Inglés: B1 Instrumental</div>
+<h3 style="color:#93c5fd">COMPETENCIAS DIGITALES</h3>
+<div class="badge">Office, HCE, Telemedicina, Electromedicina</div>
+<h3 style="color:#93c5fd">CLÍNICAS</h3>
+<div class="badge">Medicina Crítica, Soporte Vital Avanzado, Polifarmacia Geriátrica, Toxicología, Seguridad Paciente</div>
+</div>
+<div class="right">
+<h1 style="margin:0;color:#1e3a8a;font-size:28px">Genni Agustín AGUILAR HERNÁNDEZ</h1>
+<p style="color:#3b82f6;font-weight:bold;margin:5px 0 15px">Médico Especialista | Medicina Crítica | Electromedicina | Toxicología | Gerencia Salud</p>
+<div style="background:#f0f6ff;padding:15px;border-radius:10px;border-left:4px solid #1e3a8a">
+<b>PERFIL PROFESIONAL</b><br>Médico cirujano (1990) con 30+ años de experiencia en Medicina Crítica, dirección médica y docencia universitaria. Especialista en Gerencia Salud, Electromedicina (Cum Laude) y Toxicología (Univ. Sevilla). Experiencia actual en España en residencias geriátricas y atención sociosanitaria. Enfoque en seguridad paciente, polifarmacia y atención centrada persona mayor.
+</div>
+<h2>EXPERIENCIA LABORAL - ESPAÑA</h2>
+<div class="job"><h3>Médico - Residencia Ancianos</h3><b>Planiger S.A. Amavir Colmenar Viejo | Madrid</b><br><span class="small">2022 - Actual</span><br>Atención médica integral a residentes, control polifarmacia, coordinación sociosanitaria.</div>
+<div class="job"><h3>Médico</h3><b>Arquisocial S.L. Residencia Isabel la Católica</b><br><span class="small">01.09.2021 - 01.05.2022</span></div>
+<div class="job"><h3>Médico</h3><b>Aralia Servicios Socio Sanitarios S.A.</b><br><span class="small">2021 | 2019</span></div>
+<div class="job"><h3>Médico Jefe Clínico</h3><b>Fundación Instituto San José, Madrid</b><br><span class="small">18.07.2018 - 09.09.2018</span></div>
+<h2>EXPERIENCIA LABORAL - VENEZUELA (Resumen)</h2>
+<div class="job"><h3>Médico Adjunto I UCI</h3><b>Hospital Uyapar IVSS, Puerto Ordaz</b><br><span class="small">2008-2017</span></div>
+<div class="job"><h3>Jefe UCI y Director Médico</h3><b>Hospital Clínicas Caroní</b><br><span class="small">1996-2007</span></div>
+<div class="job"><h3>Coordinador Médico Emergencias Bolívar 171</h3><span class="small">2000-2001</span></div>
+<h2>EDUCACIÓN</h2>
+<p>2012 Magister Gerencia Educacional - Univ. Yacambú<br>2011 Magister Internacional Toxicología - Colegio Químicos Sevilla<br>2004 Experto Universitario Toxicología - Univ. Sevilla<br>2005 Diplomado Acupuntura - Centro Lao Tse<br>2002 Especialista Gerencia Salud - Univ. Yacambú<br>1999 Especialista Electromedicina (Cum Laude) - UNEXPO<br>1995 Especialista Medicina Crítica - UCV<br>1990 Médico Cirujano - Univ. Oriente<br>1976 Bachiller Ciencias</p>
+<h2>PROYECTO DIGITAL</h2>
+<p><b>Indicador de Preocupación - App Ana:</b> <a href="https://genniaguilar-bit.github.io/app-ana/">https://genniaguilar-bit.github.io/app-ana/</a><br>Código verificación: COD-IMG-20260804-9F4B2A</p>
+</div>
+</div>
+</body>
+</html>
